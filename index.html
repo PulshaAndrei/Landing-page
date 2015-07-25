@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/gallery.js"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script type="text/javascript" src="scripts/submit.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -29,7 +29,7 @@
 			</p>
 			<a href="" class="link_appstore" target="_blank"></a>
 			<a href="" class="link_googleplay" target="_blank"></a>
-			<button>Contact Us</button>
+			<button class="contact_us">Contact Us</button>
 		</div>
 		<div>
 			<img src="img/content.img" class="content_img">
@@ -37,8 +37,11 @@
 	</div>
 	<div class="popup">
 		<div class="popup_content">
-			<div class="header_popup">Contact Us</div>
-			<form>
+			<div class="header_popup">
+				<h2>Contact Us</h2>
+				<a href="#" class="close">close</a>
+			</div>
+			<form onsubmit="send()">
 				<div class="form-group">
 					<label class="control-label">Name</label>
 					<input type="text" class="form-control" name="name" required>
@@ -51,9 +54,10 @@
 					<label class="control-label">Message</label>
 					<textarea class="form-control" name="message" required></textarea>
 				</div>
-				<div>Capcha</div>
-				<div class="g-recaptcha" data-sitekey="6Le6UAoTAAAAAIxOBBdS5PoooSxazTOHvC_L9iFr"></div>
-				<input type="submit" name="submit" value="Send The Mail">
+				<div class="form-group captcha">
+					<label class="control-label">Captcha</label>
+				</div>
+				<input type="submit" name="submit" value="Send The Mail" class="submit">
 			</form>
 		</div>
 	</div>
