@@ -6,7 +6,6 @@ $(function(){
 	$('.close').click(function(){ $('.popup').addClass('disable_popup')});
 });
 
-
 function send(form){
 	var verify=true;
 	var reg = /.+@.+\..+/i;
@@ -58,7 +57,7 @@ function send(form){
 		xmlhttp.send(JSON.stringify({'key': 'jJvyiaMWRKRJeUOoMc_aDA',
 		   'message': {
 		       'from_email': 'support@dollz.com',
-		       'to': [{'email': 'ap.ttnby@gmail.com', 'type': 'to'}],
+		       'to': [{'email': 'info@pogodee.com', 'type': 'to'}],
 		       'autotext': 'true',
 		       'subject': 'Contact us',
 		       'html': '<p>Name: '+form.name.value+'</p><p>E-mail: '+form.email.value+'</p><p>Message: '+form.message.value+'</p>'
