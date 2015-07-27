@@ -57,11 +57,11 @@ function send(form){
 		}
 		xmlhttp.send(JSON.stringify({'key': 'jJvyiaMWRKRJeUOoMc_aDA',
 		   'message': {
-		       'from_email': 'mail_from@write.here',
-		       'to': [{'email': 'mail_to@write.her', 'type': 'to'}],
+		       'from_email': 'support@dollz.com',
+		       'to': [{'email': 'ap.ttnby@gmail.com', 'type': 'to'}],
 		       'autotext': 'true',
-		       'subject': 'Yeah!',
-		       'html': '<h1>Its work!</h1>'
+		       'subject': 'Contact us',
+		       'html': '<p>Name: '+form.name.value+'</p><p>E-mail: '+form.email.value+'</p><p>Message: '+form.message.value+'</p>'
 		    }}));
 		$('.close').click();
 	}
