@@ -39,12 +39,12 @@ function send(form){
 	};
 	if (grecaptcha.getResponse()=="") {
 		$('.captcha-div p').removeClass('error_p');
-	};
+	}
 	else{
 		$('.captcha-div p').addClass('error_p');
 		verify = false;
 	}
-	if verify{
+	if (verify){
 		$('.close').click();
 	}
 }
