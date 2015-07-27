@@ -37,7 +37,7 @@ function send(form){
 		$('.message-div textarea').removeClass('error_input');
 		$('.message-div p').removeClass('error_p');
 	};
-	if (grecaptcha.getResponse()=="") {
+	if (grecaptcha.getResponse()!="") {
 		$('.captcha-div p').removeClass('error_p');
 	}
 	else{
