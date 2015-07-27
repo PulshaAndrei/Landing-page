@@ -1,0 +1,235 @@
+html{
+    height: 100%;
+}
+body{
+	margin: 0;
+	background: url('../img/background-phone.png') center fixed;
+    background-size: 100% 100%;
+    min-height: 100%;
+    font-family: "Calibri";
+    color: rgb( 254, 254, 254 );
+    position: relative;
+}
+.container{
+	display: none;
+}
+.container_phone{
+	background: url('../img/content.png') fixed no-repeat;
+	background-size: 85%;
+	background-position: center 40px;
+    min-height: 100%;
+}
+.container_phone_shadow{
+	background: url('../img/background-phone-shadow.png') fixed no-repeat;
+	background-position: bottom;
+	background-size: 100% 100%;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.main_phone{    
+    padding: 620px 40px 40px;
+    position: relative;
+}
+.main{
+	vertical-align: bottom;
+    display: inline-block;
+	width: 48%;
+    margin-right: 3%;
+    font-size: 19px; 
+}
+
+.links_app{
+    margin-top: 15px;
+}
+.link_app:last-child img{
+    float: right;
+}
+.link_app img{
+	width: 48%;
+}
+.button{
+  background: #64aa5b;
+  width: 100%;
+  height: 80px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb( 254, 254, 254 );
+  font-size: 32px; 
+}
+.button:focus{
+    outline: none;
+}
+.main h1{
+    font-size: 42px;
+    text-shadow: 0px 1px 2px rgb( 7, 7, 7 );
+    margin: 0;
+}
+
+/*Pop-up*/
+.popup{
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    text-align: center;
+    z-index: 5;
+}
+.header_popup{
+    background: #553399;
+    font-size: 32px;
+    padding: 19px;
+    position: relative;   
+    border-radius: 17px 17px 0 0;
+}
+.close{
+    background: url('../img/popup_close.png') no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: -14px;
+    top: -14px;
+}
+.enable_popup{
+    display: block;
+}
+.disable_popup{
+    display: none;
+}
+.popup_content{
+    background: #fff;
+    vertical-align: middle;
+    display: inline-block;    
+    border-radius: 18px;
+    margin: 38px;
+}
+.popup:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+form>div, form>input{
+    margin: 15px 0;
+}
+.form-group{ 
+    text-align: left;
+}
+.form-group input, .form-group textarea{
+    background: #dbdade;
+    border: none;
+    height: 76px;
+    border-radius: 20px;
+    font-size: 36px;
+    padding: 0 36px;
+    vertical-align: middle;
+    color: rgb( 85, 51, 153 );
+}
+.form-group input, .form-group textarea{
+    outline: none;
+}
+.form-group textarea{
+    padding: 36px;
+    vertical-align: top;
+}
+.form-group label {
+    font-size: 36px;
+    color: rgb( 85, 51, 153 );
+    display: block;
+    margin-left: 30px;
+}
+.submit{    
+  margin: 8px 0 15px;
+}
+form{    
+    padding: 15px 40px;
+}
+form p{
+    display: none;
+}
+.error_p{
+    color: #ff0000;
+    margin: 4px 0 0 35px;
+    font-size: 24px;
+    display: block;
+}
+.error_input{
+    border: 2px solid #ff0000!important;
+}
+.g-recaptcha {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+
+/*Gallery*/
+.gallery{
+    text-align: right;
+    vertical-align: bottom;
+    display: inline-block;
+    width: 48%;
+}
+.gallery_position{
+    float: right;
+    position: relative;
+    width: 296px;
+}
+.gallery_iphone{
+    width: 296px;
+}
+.gallery_reflection{
+    width: 296px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.viewport{
+    width: 249px;
+    height: 371px;    
+    overflow: hidden;
+    position: absolute;
+    top: 107px;
+    left: 24px;
+}
+.slidewrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 371px;
+    margin: 0;
+    padding: 0;    
+}
+.slide{
+    width: 249px;
+    height: 371px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slide img{
+    width: 249px;
+    height: 371px;
+}
+.arrows{
+	position: absolute;
+	top: 45%;
+    z-index: 2;
+}
+.prev_slide{    
+    left: 12px;
+}
+.next_slide{
+    right: 12px;
+}
+.prev_slide img{
+    width: 12px;
+}
+.next_slide img{
+    width: 12px;
+}
