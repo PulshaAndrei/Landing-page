@@ -1,6 +1,4 @@
-var date;
 $(function(){
-	$('.popup').addClass('disable_popup');
 	$('.popup_background').addClass('disable_popup');
 	$('.contact_us').click(function(){ $('.popup').removeClass('disable_popup')});
 	$('.close').click(function(){ $('.popup').addClass('disable_popup')});
@@ -65,5 +63,3 @@ function send(form){
 		$('.close').click();
 	}
 }
-
-
