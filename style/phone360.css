@@ -263,3 +263,8 @@ form p{
         left: 0;
     }
 }
+
+.dis_btn{
+    cursor: default;
+    opacity: 0.5;
+}

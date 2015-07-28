@@ -233,3 +233,7 @@ form p{
 .next_slide img{
     width: 12px;
 }
+.dis_btn{
+    cursor: default;
+    opacity: 0.5;
+}

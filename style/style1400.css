@@ -245,3 +245,8 @@ form p{
         width: 90%;
     }
 }
+
+.dis_btn{
+    cursor: default;
+    opacity: 0.5;
+}
